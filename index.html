@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday!</title>
+  <style>
+    /* Reset margins and set full viewport height */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    /* Set a background image for the body */
+    body {
+      background: url(/cake.png) no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    /* Center the content with a semi-transparent overlay for readability */
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.8); /* Optional overlay */
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    /* Fade-in animation for the container */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* Heading styling with slide-in animation */
+    h1 {
+      font-size: 3rem;
+      color: #ff6347;
+      margin-bottom: 1rem;
+      animation: slideInDown 1.5s ease-out;
+    }
+
+    @keyframes slideInDown {
+      from {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    /* Paragraph styling with slide-in animation */
+    p {
+      font-size: 1.5rem;
+      color: #333;
+      animation: slideInUp 1.5s ease-out;
+    }
+
+    @keyframes slideInUp {
+      from {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    /* Style for the Spotify player container */
+    .spotify-player {
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Thank!</h1>
+    <p>I just wanted to take a moment to say a huge thank you for all the amazing birthday wishes! 
+        Your kind words truly made my day and filled it with joy. 
+        I feel incredibly blessed to have such wonderful friends and family who took the time to celebrate with me, even if just in spirit.
+        Thank you for making my birthday so special with your thoughtful messages. Your love and support mean the world to me, 
+        and I'm truly grateful to have each and every one of you in my life. With heartfelt thanks.
+    </p>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/73VCobZbLNTAwCxKKBtztO?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+</body>
+</html>
